@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">20180308-BorisRuzanov-NYCSchools</string>
+    <string name="reading_score">Reading Score:</string>
+    <string name="math_score">Math Score:</string>
+    <string name="writing_score">Writing Score:</string>
+    <string name="reading_score_number">Reading Score</string>
+    <string name="math_score_number">Math Score</string>
+    <string name="writing_score_number">Writing Score</string>
+    <string name="school_name">School Name</string>
+    <string name="error">Error</string>
+</resources>
