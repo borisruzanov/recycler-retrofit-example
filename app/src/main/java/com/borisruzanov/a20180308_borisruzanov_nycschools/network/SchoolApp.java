@@ -1,8 +1,6 @@
-package com.borisruzanov.a20180308_borisruzanov_nycschools;
+package com.borisruzanov.a20180308_borisruzanov_nycschools.network;
 
 import android.app.Application;
-
-import com.borisruzanov.a20180308_borisruzanov_nycschools.live.SchoolApi;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -12,6 +10,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class SchoolApp extends Application {
+
+    //Initialize retrofit to avoid creation of the object all the time
 
     Retrofit retrofit;
     private static SchoolApi schoolApi;

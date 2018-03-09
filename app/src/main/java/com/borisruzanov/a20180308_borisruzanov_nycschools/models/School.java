@@ -1,4 +1,4 @@
-package com.borisruzanov.a20180308_borisruzanov_nycschools.live;
+package com.borisruzanov.a20180308_borisruzanov_nycschools.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,6 +8,8 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class School {
+    //Model for JSON Responce
+
     @SerializedName("dbn")
     @Expose
     private String dbn;

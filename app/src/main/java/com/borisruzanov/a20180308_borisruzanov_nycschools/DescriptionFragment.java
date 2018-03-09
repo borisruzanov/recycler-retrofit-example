@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 public class DescriptionFragment extends Fragment {
 
+    //Fragment which shows details of clicked school from the list
+
     View view;
     public static String READING_SCORE = "reading";
     public static String WRITING_SCORE = "writing";
@@ -34,6 +36,7 @@ public class DescriptionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Inflating view
         view = inflater.inflate(R.layout.school_description, container, false);
         return view;
     }
@@ -46,12 +49,14 @@ public class DescriptionFragment extends Fragment {
         TextView tvWriting = view.findViewById(R.id.item_tv_writing_score);
         TextView tvMath = view.findViewById(R.id.item_tv_math_score);
 
+        //Set text views with needed info
         tvReading.setText(getScore(READING_SCORE));
         tvWriting.setText(getScore(WRITING_SCORE));
         tvMath.setText(getScore(MATH_SCORE));
     }
 
     public String getScore(String scoreName){
+        //Checking Data for null
         if(getArguments().getString(scoreName) != null){
             return getArguments().getString(scoreName);
         } else {

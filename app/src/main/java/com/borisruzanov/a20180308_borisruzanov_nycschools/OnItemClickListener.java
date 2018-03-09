@@ -1,4 +1,4 @@
-package com.borisruzanov.a20180308_borisruzanov_nycschools.adapter;
+package com.borisruzanov.a20180308_borisruzanov_nycschools;
 
 import android.view.View;
 

@@ -7,8 +7,9 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.borisruzanov.a20180308_borisruzanov_nycschools.OnItemClickListener;
 import com.borisruzanov.a20180308_borisruzanov_nycschools.R;
-import com.borisruzanov.a20180308_borisruzanov_nycschools.live.School;
+import com.borisruzanov.a20180308_borisruzanov_nycschools.models.School;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class SchoolAdapter extends RecyclerView.Adapter<SchoolAdapter.ViewHolder>{
 
+    //Adapter for a recycler view
     private List<School> schoolList;
     OnItemClickListener.OnItemClickCallback onItemClickCallback;
 
